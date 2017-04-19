@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>David</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <a href="<%= root_path %>" style="text-decoration:none">
+  <%= image_tag("logo.png", width: '900px') %>
+  </a>
+  <a href="<%= login_pages_path %>" style="text-decoration:none">
+  <%= image_tag("my_account.png", width: '163px') %>
+  </a>
+  <a href="<%= about_pages_path %>" style="text-decoration:none">
+  <%= image_tag("about_us.png", width: '163px') %>
+  </a>
+    <%= yield %>
+  </body>
+</html>
